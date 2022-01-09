@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 4rem;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(198, 63, 33);
+  background: linear-gradient(
+    120deg,
+    rgba(198, 63, 33, 1) 57%,
+    rgba(136, 27, 8, 0.9) 86%
+  );
+}
+.logo {
+  padding: 2rem;
+  letter-spacing: 0.5rem;
+  font-weight: 900;
+  color: rgb(201, 196, 196);
+}
+.text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.toDoText {
+  height: 2rem;
+  min-width: 17rem;
+  margin-right: 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(38, 37, 37);
+  outline: none;
+}
+.fa-plus-square {
+  font-size: 2.4rem;
+  color: rgb(201, 196, 196);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+i:hover {
+  transform: scale(1.05);
+  color: rgb(8, 172, 8);
+}
+.li-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style: none;
+  height: 2.42rem;
+  min-width: 19rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(38, 37, 37);
+  outline: none;
+  background-color: white;
+  /* margin-right: 0.8rem; */
+}
+.toDo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1.5rem;
+  transition: all 0.5s ease-in;
+}
+.toDoBtn {
+  background: rgb(198, 63, 33);
+  overflow: hidden;
+  border: none;
+  border-radius: 4px;
+}
+.delBtn,
+.comBtn {
+  font-size: 1.5rem;
+  padding: 4.5px;
+  cursor: pointer;
+  border: none;
+  color: rgb(201, 196, 196);
+}
+.delBtn {
+  background-color: red;
+}
+.comBtn {
+  background-color: green;
+}
+.fa-trash-alt,
+.fa-check-square {
+  pointer-events: none;
+}
+.green {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+.del {
+  opacity: 0.5;
+  transform: translateY(6rem) rotateZ(30deg);
+}
+
+@media only screen and (min-width: 720px) {
+  .conteiner {
+    background: indigo;
+  }
+  .toDoText,
+  .li-text {
+    background-color: rgb(110, 6, 184);
+    color: white;
+  }
+  .toDoBtn {
+    background: indigo;
+  }
+}
